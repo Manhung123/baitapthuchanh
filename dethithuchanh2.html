@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function remove(arr, index) {
+    if (index >= 0 && index < arr.length) {
+      const array = [];
+      for (let i = index; i < arr.length; i++) {
+        array.push(arr[i]);
+      }
+      return array;
+    } else {
+      return arr;
+    }
+  }
+
+  const arr = [10, 20, 30, 40, 50, 60];
+  const index = 2;
+  alert(remove(arr, index));
+
+</script>
+</body>
+</html>
